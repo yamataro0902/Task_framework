@@ -1,44 +1,78 @@
 @charset "UTF-8";
 
-fieldset {
-  border: none;
+
+table, tr, th, td {
+	width: 35%;
+border: 1px #ff0000 solid;
+  border-collapse: collapse;
+    border:3px solid #333;
 }
 
-fieldset label {
-  display: inline-block;
-  width: 43px;
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
 
-fieldset.label-60 label {
-  width: 60px;
+.main{
+	float: left;
+	width: 100%;
 }
 
-fieldset.label-110 label {
-  width: 110px;
+.menu {
+	float: left;
+	width: 20%;
+	background-color: #00FFFF;
+	border: 2px solid black;
+	text-align: center;
+	height: 5%;
 }
 
-fieldset div {
-  margin: 5px;
+h3 {
+	background-color: blue;
 }
 
-form ~ div, table ~ div {
-  margin-top: 10px;
+.next {
+	height: 93%;
+	background-image:
+		url("../gazo/img001.jpg");
+	opacity: 0.75;
+	background-size:100% 100%;
+	float: left;
+	width: 100%;
+
+
 }
 
-table, table th, table td {
-  border: solid 1px;
+body {
+	margin: 0px;
 }
 
-input:read-only {
-  background: #CCCCCC;
-  color: black;
+html, body {
+	height: 100%;
 }
 
-.center {
-  text-align: center;
+.fotter {
+	background: #99CCFF	;
+	float: left;
+	width: 100%;
+	}
+
+textarea{
+	width: 80%;
+	text-align: center;
 }
 
-.required::before {
-  content: "※";
-  color: red;
+.puramo{
+	width: 45% ;
+}
+
+h1{
+	font-size: 50px;
+	font-style: italic;
+	color: blue;
+}
+
+.hikaku{
+	float: left;
 }

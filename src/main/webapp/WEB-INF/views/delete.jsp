@@ -14,7 +14,7 @@
    <c:if test="${not empty msg}">
     <p class="message"><span class="required"></span>${msg}</p>
   </c:if>
-<p>削除を行うデータのIDを入力してください<br>
+<p>退会を行うユーザーのIDを入力してください<br>
 <span class="required"></span>は必須です</p>
 
 <form:form action="delete" modelAttribute="form">

@@ -14,25 +14,32 @@
 
     <p class="message">${msg}</p>
 
-<p>検索したいデータ情報を入力してください<br>
-※全て空白の場合は全検索を行います</p>
+<p>検索したい商品の情報を入力してください<br>
+※全て空白の場合は商品一覧がでます。</p>
 
 <form:form action="list" modelAttribute="form" method="get">
   <fieldset>
     <div>
-      <label>ID</label><form:input path="userId" value="${changeId}"/>
+      <label>NUMBER</label><form:input path="zoidsNumber" value="${changeId}"/>
     </div>
     <div>
-      <label>名前</label><form:input path="userName" />
+      <label>名前</label><form:input path="zoidsName" />
     </div>
     <div>
-      <label>TEL</label><form:input path="telephone" />
+      <label>価格</label><form:input path="money" />
     </div>
   </fieldset>
   <form:button>検索</form:button>
 </form:form>
+
+
+
 <div>
   <a href="menu">メニューに戻る</a>
 </div>
+
+
+
 </body>
 </html>
+

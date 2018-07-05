@@ -22,16 +22,12 @@
 		<fieldset>
 			<div>
 				<label>ID</label>
-				<form:input path="id" value="${fn:escapeXml(beforeUser.userId)}"
+				<form:input path="id" value="${fn:escapeXml(beforeUser.loginId)}"
 					readonly="true" />
 			</div>
 			<div>
 				<label>名前</label>
-				<form:input path="name" value="${fn:escapeXml(beforeUser.userName)}" />
-			</div>
-			<div>
-				<label>TEL</label>
-				<form:input path="tel" value="${fn:escapeXml(beforeUser.telephone)}" />
+				<form:input path="name" value="${fn:escapeXml(beforeUser.loginName)}" />
 			</div>
 			<div>
 				<label>PASS</label>

@@ -10,26 +10,46 @@
 <link href="css/commons.css" rel="stylesheet">
 </head>
 <body>
+<div class="main">
+<h3>ZOIDS レビューブログ</h3>
+<p class="menu">
+	<a href="select">商品レビュー</a>
+</p>
+<p class="menu">
+	<a href="insert">ユーザー登録</a>
+</p>
+<p class="menu">
+	<a href="update">ユーザー更新</a>
+</p>
+<p class="menu">
+	<a href="delete">退会</a>
+</p>
 
-<c:if test="${empty login}">
-  <c:redirect url="/index"/>
-</c:if>
+<p class="menu">
+	<a href="select2">ユーザー情報確認</a>
+</p>
 
-	ようこそ${login}さん！！
-<p>
-	<a href="select">検索</a>
-</p>
-<p>
-	<a href="insert">登録</a>
-</p>
-<p>
-	<a href="update">更新</a>
-</p>
-<p>
-	<a href="delete">削除</a>
-</p>
-<form:form action="logout" modelAttribute = "form">
+
+
+
+
+</div>
+
+
+<div class="next">
+
+</div>
+
+
+
+<div class="fotter">
+
+<!-- <form:form action="logout" modelAttribute = "form">
   <form:button>ログアウト</form:button>
-</form:form>
+</form:form>-->
+
+<a href="login">ログインページへ</a>
+
+</div>
 </body>
 </html>

@@ -3,7 +3,6 @@ package jp.co.axiz.web.entity;
 public class LoginForm {
 
 	private String id;
-
 	private String pass;
 
 	public String getId() {

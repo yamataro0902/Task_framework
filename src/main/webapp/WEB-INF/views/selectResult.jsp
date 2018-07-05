@@ -10,25 +10,34 @@
 <link href="css/commons.css" rel="stylesheet">
 </head>
 <body>
-	<table>
+
+
+
+<p>＊価格は全て税抜き表示です。</p>
+<p>名前をクリックすると、レビューに飛びます</p>
+	<table border="1">
 		<caption>検索結果</caption>
 		<thead>
 			<tr>
-				<th>ID</th>
+				<th>NUMBER</th>
 				<th>名前</th>
-				<th>TEL</th>
+				<th>価格</th>
 			</tr>
 		</thead>
 		<tbody>
 			<c:forEach var="user" items="${userList}">
 				<tr>
-					<td>${fn:escapeXml(user.userId)}</td>
-					<td>${fn:escapeXml(user.userName)}</td>
-					<td>${fn:escapeXml(user.telephone)}</td>
+					<td>${fn:escapeXml(user.zoidsNumber)}</td>
+					<td><a href="${fn:escapeXml(user.zoidsNumber)}">
+					${fn:escapeXml(user.zoidsName)}</a></td>
+					<td>${fn:escapeXml(user.money)}</td>
 				</tr>
 			</c:forEach>
 		</tbody>
 	</table>
 <a href="menu">メニューへ戻る</a>
+<a href="login">ログインページへ</a>
+
+
 </body>
 </html>

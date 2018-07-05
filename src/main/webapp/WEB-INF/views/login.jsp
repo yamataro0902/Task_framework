@@ -10,7 +10,6 @@
 <link href="css/commons.css" rel="stylesheet">
 </head>
 <body>
-	<p>${msg}</p>
 	<form:form action="login" modelAttribute="form">
 		<p>
 			<label>ID</label>
@@ -22,6 +21,9 @@
 		</p>
 		<form:button>ログイン</form:button>
 	</form:form>
+
+	<p>
+	<a href="insert">新規登録はこちらから</a>
 
 </body>
 </html>

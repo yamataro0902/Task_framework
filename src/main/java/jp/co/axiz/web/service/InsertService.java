@@ -1,6 +1,7 @@
 package jp.co.axiz.web.service;
 
+import jp.co.axiz.web.entity.Users;
+
 public interface InsertService {
-	public void insert(String name, String tel, String pass);
-	public Integer findMax();
+	public void insertMembar(Users users);
 }

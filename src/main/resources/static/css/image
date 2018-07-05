@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+
+table, tr, th, td {
+	width: 35%;
+border: 1px #ff0000 solid;
+  border-collapse: collapse;
+    border:3px solid #333;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.main{
+	float: left;
+	width: 100%;
+}
+
+.menu {
+	float: left;
+	width: 25%;
+	background-color: #00FFFF;
+	border: 2px solid black;
+	text-align: center;
+	height: 5%;
+}
+
+h3 {
+	background-color: blue;
+}
+
+.next {
+	height: 550px;
+	background-image:
+		url("https://img1-kakaku.ssl.k-img.com/images/maga/11880/img001.jpg");
+	opacity: 0.72;
+	background-size:100% 100%;
+	float: left;
+	width: 100%;
+
+
+}
+
+body {
+	margin: 0px;
+}
+
+html, body {
+	height: 100%;
+}
+
+.fotter {
+	background: #99CCFF	;
+	float: left;
+	width: 100%;
+	}
+
+textarea{
+	width: 80%;
+	text-align: center;
+}
+
+.puramo{
+	width: 50% ;
+}
+
+h1{
+	font-size: 50px;
+	font-style: italic;
+	color: blue;
+}

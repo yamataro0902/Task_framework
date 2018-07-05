@@ -10,10 +10,11 @@ import jp.co.axiz.web.entity.LoginForm;
 @Controller
 public class IndexController {
 
-	@RequestMapping("/index")
-	public String index(@ModelAttribute("form") LoginForm form, Model model) {
-		return "index";
+	@RequestMapping("/top")
+	public String top(@ModelAttribute("form") LoginForm form, Model model) {
+		return "top";
 	}
+
 	@RequestMapping("/menu")
 	public String menu(@ModelAttribute("form") LoginForm form, Model model) {
 		return "menu";

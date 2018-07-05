@@ -15,8 +15,8 @@
     <p class="message">${msg}</p>
 
 
-<p>更新を行うデータのIDを入力してください<br>
-<span class="required"></span>は必須です</p>
+<p>更新を行うユーザーのIDを入力してください<br>
+<span class="required"></span></p>
 
 <form:form action="update" modelAttribute="form">
   <fieldset>

@@ -27,22 +27,19 @@
   <c:if test="${not empty msg}">
     <p class="message">${msg}</p>
   </c:if>
-<p>これでよろしいですか？</p>
+<p>変更箇所を確認して、更新してください。</p>
 
 <form:form action="updateConfirm" modelAttribute ="form">
   <fieldset>
     <div>
-      <label>ID</label><form:input path="id" value="${fn:escapeXml(beforeUser.userId)}" readonly="true"/>
+      <label>ID</label><form:input path="id" value="${fn:escapeXml(beforeUser.loginId)}" readonly="true"/>
     </div>
   </fieldset>
 
   <fieldset class="col">
     <legend>変更前</legend>
     <div>
-      <label>名前</label><form:input path="forName" value="${beforeUser.userName}" disabled="true"/>
-    </div>
-    <div>
-      <label>TEL</label><form:input path="forTel" value="${beforeUser.telephone}" disabled="true"/>
+      <label>名前</label><form:input path="forName" value="${beforeUser.loginName}" disabled="true"/>
     </div>
     <div>
       <label>PASS</label><form:password path="forPass" value="${beforeUser.password}" disabled="true"/>
@@ -54,10 +51,7 @@
   <fieldset class="col label-110">
     <legend>変更後</legend>
     <div>
-      <label>名前</label><form:input path="name" value="${fn:escapeXml(afterUser.userName)}" readonly="true"/>
-    </div>
-    <div>
-      <label>TEL</label><form:input path="tel" value="${fn:escapeXml(afterUser.telephone)}" readonly="true"/>
+      <label>名前</label><form:input path="name" value="${fn:escapeXml(afterUser.loginName)}" readonly="true"/>
     </div>
     <div>
       <label>PASS(再入力)</label><form:password path="pass" value ="${fn:escapeXml(rePass)}"/>

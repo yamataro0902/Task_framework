@@ -9,13 +9,12 @@
 <link href="css/commons.css" rel="stylesheet">
 </head>
 <body>
-<p>実行者：${login}</p>
 <p>正常に登録されました</p>
 <form:form action="select" method="get" modelAttribute = "form">
   <form:button>検索</form:button>
 </form:form>
 <div>
-  <a href="menu">メニューに戻る</a>
+  <a href="select2">ログインIDを確認する</a>
 </div>
 </body>
 </html>

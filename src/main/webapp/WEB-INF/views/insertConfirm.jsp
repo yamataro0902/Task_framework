@@ -14,7 +14,7 @@
 
     <p class="message">${msg}</p>
 
-<p>これでよろしいですか？</p>
+<p>PASSを再入力してください</p>
 
 <form:form action="insertConfirm" modelAttribute="form" method="post">
   <fieldset class="label-110">
@@ -22,12 +22,9 @@
       <label>名前</label><form:input path="name" value="${fn:escapeXml(form.name)}" readonly="true"/>
 
     </div>
-    <div>
-      <label>TEL</label><form:input path="tel" value="${fn:escapeXml(form.tel)}" readonly="true"/>
 
-    </div>
     <div>
-      <label>PASS（再入力）</label><form:password path="pass"/>
+      <label>PASS</label><form:input path="pass" value="${fn:escapeXml(form.pass)}" readonly="true"/>
 
     </div>
   </fieldset>
@@ -37,7 +34,7 @@
   </div>
 </form:form>
 <div>
-  <a href="menu">メニューに戻る</a>
+  <a href="login">ログインページへ</a>
 </div>
 </body>
 </html>

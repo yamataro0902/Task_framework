@@ -10,5 +10,9 @@
 <body>
 <a href="login">通常ログイン</a>
 
+
+
+
+
 </body>
 </html>

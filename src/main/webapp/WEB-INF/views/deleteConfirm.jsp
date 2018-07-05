@@ -19,11 +19,9 @@
       <label>ID</label><form:input path="id" value="${User.userId}" readonly="true"/>
     </div>
     <div>
-      <label>名前</label><form:input path="name" value="${User.userName}" readonly="true"/>
+      <label>名前</label><form:input path="name" value="${LoginUser.loginName}" readonly="true"/>
     </div>
-    <div>
-      <label>TEL</label><form:input path="tel" value="${User.telephone}" readonly="true"/>
-    </div>
+
   </fieldset>
   <div>
     <form:button>削除</form:button>
